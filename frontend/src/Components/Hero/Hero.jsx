@@ -3,6 +3,7 @@ import "./index.css";
 
 import { assets, STATS } from "../../assets/assets";
 import StatInfoCard from "../StatInfoCard/StatInfoCard";
+import { Analytics } from "@vercel/analytics/react";
 
 const Hero = () => {
   const handleDownload = () => {
@@ -17,6 +18,7 @@ const Hero = () => {
   return (
     <section className="top-section">
       <div className="hero-container">
+        <Analytics />
         <img src={assets.satish_hero_img} alt="" />
         <div className="hero-text">
           <h1>
