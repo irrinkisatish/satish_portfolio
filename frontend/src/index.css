@@ -1,0 +1,56 @@
+@import "tailwindcss";
+* {
+  font-family: Outfit;
+  box-sizing: border-box;
+}
+
+/* === BASE HEADING === */
+.heading {
+  font-family: "Prata", serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5rem; /* Default for large screens */
+  padding-bottom: 2px;
+}
+
+/* Adjust for tablets and medium screens */
+@media (max-width: 1024px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+}
+
+/* Adjust for smaller tablets and large phones */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+}
+
+/* Line styling remains responsive */
+.hr-line {
+  width: 40%;
+  margin: 10px auto;
+  border: none;
+  border-top: 2px solid brown;
+}
+
+/* Adjust line width for smaller screens */
+@media (max-width: 768px) {
+  .hr-line {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hr-line {
+    width: 60%;
+  }
+}

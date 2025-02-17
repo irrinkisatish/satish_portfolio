@@ -1,0 +1,40 @@
+.Bar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  background-color: #291e24;
+  flex-wrap: wrap;
+}
+
+.Bar-container li {
+  flex: 1;
+  text-align: center;
+  padding: 15px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Bar-container li.active {
+  background-color: #543856; /* Active tab color */
+  color: white;
+}
+
+.Bar-container li a {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Ensures the full li is clickable */
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive for small devices */
+@media (max-width: 600px) {
+  .Bar-container li {
+    width: 100%;
+  }
+}
